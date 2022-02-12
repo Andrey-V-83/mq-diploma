@@ -183,6 +183,7 @@ body {
 
 .container {
   margin: 0 auto;
+	width: 72%;
   margin-bottom: 55px;
   padding: 0 15px;
   display: flex;
@@ -374,7 +375,7 @@ body {
 /*main-begin*/
 .page {
   display: flex;
-  width: 1200px;
+  width: 72%;
   margin: 0 auto;
   padding: 64px 15px;
   justify-content: space-between;
@@ -459,6 +460,7 @@ p {
 /*aside-begin*/
 .side-bar {
   width: 275px;
+	margin-left: 15px;
 }
 
 .latest-posts {
@@ -666,7 +668,7 @@ p {
   margin: 0 auto 180px auto;
   justify-content: space-between;
   padding: 0 15px;
-  width: 1200px;
+  width: 72%;
 }
 
 .shop-title {
@@ -689,12 +691,30 @@ p {
 }
   
 .product {
-  width: calc(100%/3 - 115px);
-  height: 435px;
-  margin: 0 21px;
+  width: calc(100%/3 - 100px);
+  margin: 0 50px;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.product_1 {
+	width: calc(100%/3 - 100px);
+  margin-left: 25px;
+	margin-right: 70px;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.product_3 {
+	width: calc(100%/3 - 100px);
+  margin-left: 70px;
+	margin-right: 25px;
+	flex-grow: 1;
+	flex-shrink: 1;
 }
 
 .product__imgbox {
+	max-width: 100%;
   margin-bottom: -10px; 
 }
 
@@ -798,11 +818,16 @@ p {
 /*shop-end*/
 
 /*footer-begin*/
+.article-footer {
+	width: 72%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
 .container-footer {
-  width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px 15px;
+  padding: 30px 0;
   background-color: #f4f7f6;
   opacity: 1;
 }
@@ -855,8 +880,8 @@ p {
 
 .copyright-footer {
   display: block;
-  margin-top: 70px;
-  margin-bottom: 35px;
+	width: 75%;
+	margin: 70px auto 35px auto;
   font-size: 12px;
   font-weight: 700;
   text-align: center;
@@ -867,12 +892,14 @@ p {
 
 @media (min-width: 641px) and (max-width: 1199px) {
   .header { 
+	  padding: 35px 0 145px 0;
     background-image: url("../img/banner-bg-tablet.jpg");  
   }
   
   .container {
+		width: 91%;
     margin-bottom: 100px;
-    padding: 15px;
+    margin-top: 15px;
 	}
   
   .header-logo {
@@ -921,8 +948,16 @@ p {
     width: 650px;	
   }
   
+	.shape {
+    margin: 45px auto 20px auto;
+	}
+	
+	.trends-shop-name {
+    font-size: 18px;
+	}
+	
   .trend1, .trend2, .trend3, .trend4 {
-	width: calc(50% - 4px);
+	  width: calc(50% - 4px);
   }
   
   .trend2 {
@@ -935,58 +970,96 @@ p {
   }
   
   .page {
-	  width: 698px;
-	  padding-top: 50px;
-		
+	  width: 91%;
+	  padding-top: 50px;		
   }
+	
+	.content {
+		width: 100%;
+	}
+	
+	.side-bar {
+	  margin-left: 35px;
+  }
+	
   .post-list {
     flex-wrap: wrap;
-	  max-width: 90%;
+	  width: 100%;
   }
   
+	.post-picture {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.main_img {
+		width: 100%;
+		height: 100%;
+	}
+	
   .post-list-article {
     margin-left: 0px;
 	  margin-top: 15px;
   }
   
   .shop {
-		width: 768px;
+		width: 91%;
 		box-sizing: border-box;
 		display: flex;
 		flex-wrap: wrap;
   }
   
+	.shop-title {
+    margin: 0 auto 20px auto;
+	}
+	
+	.product__img {
+		width: 100%;
+	}
+	
   .product {
-		width: calc(100%/2 - 85px);
+		width: calc(100%/2 - 75px);
+		margin-left: 27px;
+		margin-right: 10px;
+		margin-bottom: 50px;
   }
 	
-	.product:first-child {
-		margin-left: 34px;
-	}
+  .product_1 {
+	  width: calc(100%/2 - 75px);
+    margin-left: 10px;
+	  margin-right: 39px;
+		margin-bottom: 50px;
+  }
+
+  .product_3 {
+	  width: calc(100%/2 - 75px);
+    margin-left: 10px;
+	  margin-right: 367px;
+  }
 	
-	.product:nth-child(2n) {
-		margin-right: 36px;
-	}
-	
-	.product:last-child {
-		margin-top: 130px;
-		margin-left: 34px;
+	.article-footer {
+    width: 91%;
 	}
 	
 	.container-footer {
-    width: 715px;
+    min-width: 91%;
 		box-sizing: border-box;
+	}
+	
+	.copyright-footer {
+		min-width: 100%;
 	}
 } 
 
 @media (max-width: 640px){
 	.header { 
     background-image: url("../img/banner-mobile.jpg");
-    max-width: 100%;	
-		padding-right: 15px;
+    max-width: 100%;
+    padding: 25px 0 145px 0; 		
   }
 	
 	.container {
+		width: 92%;
     margin-bottom: 68px;
     padding: 0;
 	}
@@ -995,7 +1068,8 @@ p {
     width: 290px;
     height: 59px;
     margin-top: 160px;
-    margin-left: 13px;    
+    margin-left: auto;
+    margin-right: auto;    
   }
   
   .menu-list {
@@ -1040,6 +1114,10 @@ p {
     height: 154px;	
   }
   
+	.shape {
+    margin: 46px auto 23px auto;
+	}
+	
 	.trends-shop-name {
 		font-size: 16px;
 	}
@@ -1063,6 +1141,7 @@ p {
 	}
 	
   .page {
+		margin: 0 auto;
 	  padding: 45px 15px 0 15px;
 		display: flex;
 		width: 100%;
@@ -1079,15 +1158,18 @@ p {
   .post-list {
     flex-wrap: wrap;
 		margin-bottom: 60px;
+		padding-left: auto;
+    padding-right: auto;
   }
   
 	.post-picture {
-    width: 330px;
-		height: 255px;
+    width: 100%;
+		height: 100%;
 	}
 	
 	.main_img {
-		width: 330px;
+		width: 100%;
+		height: 100%;
 	}
 	
   .post-list-article {
@@ -1097,7 +1179,7 @@ p {
   
 	.post-list-article p {
 		font-size: 14px;
-		width: 324px;
+		width: 100%;
 	}
 	
 	.post-list-aside:last-child {
@@ -1119,7 +1201,7 @@ p {
 	
 	.side-bar {
 		margin: auto;
-		width: 328px;
+		width: 100%;
 	}
 	
 	.side-bar-header {
@@ -1135,19 +1217,19 @@ p {
 	}
 	
 	.search {
-    width: 329px;
+    width: 100%;
 	}
 	
 	.search-field {
-    width: 239px;
+    width: 100%;
 	}
 	
 	.input-email-address {
-    width: 308px;
+    width: 94%;
 	}
 	
 	.btn-submit {
-    width: 328px;
+    width: 100%;
 	}
 	
 	.tags-link {
@@ -1155,15 +1237,35 @@ p {
 	}
 	
   .shop {
-		width: 100%;
+		width: 92%;
 		box-sizing: border-box;
 		padding: 0;
 		margin: 0 auto 100px auto;
   }
   
   .product {
-		width: calc(100% - 77px);
+		width: 100%;
+		margin-left: 24px;
+	  margin-right: 24px;
+		margin-bottom: 50px;
   }
+	
+  .product_1 {
+	  width: 100%;
+    margin-left: 24px;
+	  margin-right: 24px;
+		margin-bottom: 50px;
+  }
+
+  .product_3 {
+	  width: 100%;
+    margin-left: 24px;
+	  margin-right: 24px;
+  }
+	
+	.product__img {
+		width: 100%;
+	}
 	
 	.product__body {
     padding-top: 7px;
@@ -1177,25 +1279,17 @@ p {
 		padding-bottom: 6px;
 	}
 	
-	.product:first-child {
-		margin-left: 39px;
-		margin-bottom: 60px;
-	}
-	
-	.product:nth-child(2n) {
-		margin: auto;
-	}
-	
-	.product:last-child {
-		margin-top: 109px;
-		margin-left: 39px;
+	.article-footer {
+    width: 92%;
+		margin: 0 auto;
 	}
 	
 	.container-footer {
-    width: 299px;
+    width: 100%;
 	}
 	
 	.copyright-footer {
+		width: 100%;
 		margin: 45px auto;
 	}
 }
