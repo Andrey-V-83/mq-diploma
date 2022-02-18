@@ -183,7 +183,7 @@ body {
 
 .container {
   margin: 0 auto;
-	width: 72%;
+  width: 1200px;
   margin-bottom: 55px;
   padding: 0 15px;
   display: flex;
@@ -294,7 +294,7 @@ body {
 
 .trend2 {
   display: flex; 
-	align-items: flex-end;
+  align-items: flex-end;
   width: 25%;
   height: 320px;
   margin: 0 4px;
@@ -306,7 +306,7 @@ body {
 
 .trend3 {
   display: flex; 
-	align-items: flex-end;
+  align-items: flex-end;
   width: 25%;
   height: 320px;
   margin-right: 4px;
@@ -371,7 +371,7 @@ body {
 /*main-begin*/
 .page {
   display: flex;
-  width: 72%;
+  width: 1200px;
   margin: 0 auto;
   padding: 64px 15px;
   justify-content: space-between;
@@ -664,7 +664,7 @@ p {
   margin: 0 auto;
   justify-content: space-between;
   padding: 0 15px;
-  width: 72%;
+  width: 1200px;
 }
 
 .shop-title {
@@ -688,7 +688,7 @@ p {
 }
   
 .product {
-  width: calc(100%/3 - 82px);
+  width: calc(100%/3 - 73px);
 }
 
 .product__imgbox {
@@ -707,7 +707,7 @@ p {
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-direction: column;
-	min-height: 50%;
+	min-height: 200px;
 }
 
 .product__title {
@@ -791,9 +791,9 @@ p {
 
 /*footer-begin*/
 .article-footer {
-	width: 72%;
+	width: 1200px;
 	padding: 0 15px;
-	margin: 109px auto 0 auto;
+	margin: 85px auto 0 auto;
 }
 
 .container-footer {
@@ -852,8 +852,8 @@ p {
 
 .copyright-footer {
   display: block;
-	width: 75%;
-	margin: 70px auto 35px auto;
+  width: 100%;
+  margin: 70px auto 35px auto;
   font-size: 12px;
   font-weight: 700;
   text-align: center;
@@ -1002,7 +1002,7 @@ p {
 	
   .product {
 		width: calc(100%/2 - 36px);
-		margin-bottom: 85px;
+		margin-bottom: 55px;
   }
 	
 	.product__img {
@@ -1011,7 +1011,7 @@ p {
 	
 	.article-footer {
     width: 91%;
-		margin: 31px auto 0 auto;
+		margin: 20px auto 0 auto;
 	}
 	
 	.container-footer {
@@ -1138,8 +1138,7 @@ p {
   .post-list {
     flex-wrap: wrap;
 		margin-bottom: 60px;
-		padding-left: auto;
-    padding-right: auto;
+		
   }
   
 	.post-picture {
@@ -1229,7 +1228,7 @@ p {
 	
   .product {
 		width: 100%;
-		margin-bottom: 58px;
+		margin-bottom: 50px;
   }
 	
 	.product__img {
@@ -1238,6 +1237,7 @@ p {
 	
 	.product__body {
     padding-top: 7px;
+		padding-bottom: 7px;
 		min-height: 34%;
 	}
 	
@@ -1251,7 +1251,7 @@ p {
 	
 	.article-footer {
     width: 92%;
-		margin: 7px auto 0 auto;
+		margin: 14px auto 0 auto;
 	}
 	
 	.container-footer {
